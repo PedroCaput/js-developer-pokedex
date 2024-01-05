@@ -33,14 +33,6 @@ body {
     padding: 1.25rem;
 }
 
-#loadMoreButton, #trigger {
-    display: none;
-}
-
-button:not(#loadMoreButton) {
-    line-height: 0;
-}
-
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;

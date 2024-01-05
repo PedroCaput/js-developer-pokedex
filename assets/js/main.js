@@ -77,20 +77,6 @@ function loadPokemonItens(offset, limit) {
 
 loadPokemonItens(offset, limit);
 
-loadMoreButton.addEventListener('click', () => {
-  offset += limit
-  const qtdRecordsWithNexPage = offset + limit
-
-  if (qtdRecordsWithNexPage >= maxRecords) {
-      const newLimit = maxRecords - offset
-      loadPokemonItens(offset, newLimit)
-
-    } else {
-      loadPokemonItens(offset, limit)
-    }
-    loadMoreButton.parentElement.removeChild(loadMoreButton)
-})
-
 pokemonList.addEventListener("click", () => {
   const element = event.target.closest(".pokemon");
   if (element) {

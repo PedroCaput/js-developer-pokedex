@@ -212,11 +212,6 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
-    background-color: #47414179;
-}
-
-.pagination .loader {
-    background-color: #47414179;
 }
 
 .pagination button {
